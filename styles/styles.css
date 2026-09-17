@@ -51,3 +51,51 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
+
+/**********************************************************
+                        MAIN STYLES
+***********************************************************/
+.container {
+    margin: 0 auto;
+   max-width: 900px;
+   background-color: #d76c6c5f;
+}
+
+
+
+/**********************************************************
+                        NAV STYLES
+***********************************************************/
+nav > ul {
+    display: flex;
+}
+nav > ul > li {
+    flex-grow: 1;
+}
+nav > ul > li:first-child {   
+    flex-grow: 3;
+}
+nav ul li ul {
+    display: none;
+}
+nav ul a{
+    color: rgb(45, 94, 48);
+    padding: 10px;
+    display: block;
+    background-color:rgba(226, 103, 117, 0.523)
+}
+nav ul a:hover, nav ul a:active {
+    background-color: #7b14885f;
+    color: white;
+}
+
+nav ul li{
+    position: relative;
+}
+
+nav ul li:hover ul{
+    display: block;
+    position:absolute;
+    width: 100%;
+}
